@@ -3,6 +3,7 @@ $main-color: #43100F
 $gradient-color: -webkit-linear-gradient(top, #3c3c3c 0, #222 100%)
 $a-color: #9d9d9d
 $fixed: fixed
+
 // * * Variables * * //
 
 // * * Typografi * * //
@@ -10,11 +11,14 @@ footer
 	p
 		line-height: 0px
 		color: $a-color
+h3
+	color: #9d9d9d
+h2
+	color: #9d9d9d
 
 // * * Positioning * * //
 body
-	padding: 0
-	margin: auto 0
+	margin: 0
 	background-color: $main-color
 	text-align: center
 	font-family: 'Lato', sans-serif
@@ -36,13 +40,28 @@ body
 		position: $fixed
 		bottom: 0
 		width: 100%
-main
-	display: flex
-	flex-direction: row
-	flex-wrap: wrap
-	justify-content: center
-	align-content: stretch
-	align-items: stretch
+	main 
+		display: flex 
+		flex-direction: row 
+		flex-wrap: wrap 
+		justify-content: center 
+		align-content: stretch 
+		align-items: stretch 
+		height: 100%
+		top: 100px
+ 
+		.middle
+			top: 70px
+			position: fixed
+			width: 45%
+
+		.left
+			left: 10px
+			width: 26%
+			top: 70px
+		.right
+			width: 26%
+			top: 70px
 // * * Positioning * * //
 
 // * Navigation bar * //
