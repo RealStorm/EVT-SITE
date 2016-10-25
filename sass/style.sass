@@ -1,28 +1,39 @@
 // * * Variables * * //
-$main-color: #43100F
+$main-color: #43100A
 $gradient-color: -webkit-linear-gradient(top, #3c3c3c 0, #222 100%)
-$a-color: #9d9d9d
+$a-color: #BABABA
 $fixed: fixed
 // * * Typografi * * //
 footer
 	p
 		line-height: 0px
-		color: $a-color
+		color: white
 h3
 	color: $a-color
 	font-size: 28px
 	font-weight: 400
 	margin-bottom: 10px
 h2
+	font-size: 26px
 	color: $a-color
 	font-weight: 600
-.kontakt-p
+.kontakt-fb
+	width: 200px
 	font-size: 18px
 	color: $a-color
-	font-weight: 200
-	text-align: center
+	font-weight: 100
+	text-align: left
 	margin-top: 5px
-	margin-bottom: 8px
+	margin-bottom: 14px
+
+.kontakt-mail
+	font-size: 18px
+	color: $a-color
+	font-weight: 100
+	text-align: left
+	margin-top: 5px
+	margin-bottom: 14px
+		
 .indextext
 	font-weight: 100
 	font-size: 14px
@@ -66,7 +77,7 @@ body
 		top: 100px
  
 		.middle
-			top: 70px
+			top: 64px
 			position: $fixed
 			width: 45%
 
@@ -78,7 +89,21 @@ body
 			right: 10px
 			width: 26%
 			top: 70px
-
+.kontakt-flex
+	display: flex
+	flex: column
+	height: 30px
+	width: 190px
+	margin-bottom: 15px
+	text-decoration: none	
+	.img-fb
+		margin-right: 8px
+		margin-top: 8px
+		height: 17px
+	.img-email
+		margin-right: 8px
+		margin-top: 8px
+		height: 17px
 // * * Positioning * * //
 
 // * Navigation bar * //
@@ -117,23 +142,61 @@ li
 	bottom: 0
 	left: 0
 	right: 0
+	h2
+		font-size: 42px
 	.kontakt-left
 		position: $fixed
 		left: 0
-		margin-left: 150px
+		margin-left: 240px
+		margin-top: 50px
 		text-align: center
+		border: 1px solid black
+		background: $gradient-color
+		padding: 75px
+		padding-top: 50px
+		width: 150px
+		border-radius: 45px
+
+		h3
+			margin-top: 0
+			margin-bottom: 15px
+			font-size: 40px
+			text-decoration: uppercase
+
 	.kontakt-right
 		position: $fixed
 		right: 0
-		margin-right: 150px
+		margin-right: 240px
+		margin-top: 50px
 		text-align: center
+		border: 1px solid black
+		background: $gradient-color
+		padding: 75px
+		padding-top: 50px
+		width: 150px
+		border-radius: 45px
+		h3
+			margin-top: 0
+			margin-bottom: 15px
+			font-size: 40px
+			text-decoration: uppercase
+
 // * * Iframe * * //
 iframe
 	border: 1px solid #000
 	border-radius: 2px
 	color: $a-color
-
-
+.img-email
+	width: 17px
+	height: 17px
+	margin-right: 4px
+.img-fb
+	margin-right: 4px
+.kierowcy
+	tbody
+		tr
+			td,th
+				color: $a-color
 
 
 
