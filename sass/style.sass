@@ -9,9 +9,28 @@ footer
 		line-height: 0px
 		color: $a-color
 h3
-	color: #9d9d9d
+	color: $a-color
+	font-size: 28px
+	font-weight: 400
+	margin-bottom: 10px
 h2
-	color: #9d9d9d
+	color: $a-color
+	font-weight: 600
+.kontakt-p
+	font-size: 18px
+	color: $a-color
+	font-weight: 200
+	text-align: center
+	margin-top: 5px
+	margin-bottom: 8px
+.indextext
+	font-weight: 100
+	font-size: 14px
+	text-align: left
+.welcometext
+	margin-top: 50px
+	font-weight: 300
+	font-size: 18px
 // * * Positioning * * //
 body
 	margin: 0
@@ -48,7 +67,7 @@ body
  
 		.middle
 			top: 70px
-			position: fixed
+			position: $fixed
 			width: 45%
 
 		.left
@@ -59,6 +78,7 @@ body
 			right: 10px
 			width: 26%
 			top: 70px
+
 // * * Positioning * * //
 
 // * Navigation bar * //
@@ -76,6 +96,7 @@ li
 	a
 		text-decoration: none
 		color: white
+// * * Navigation bar * * //
 .left 
 	position: $fixed
 	left: 0
@@ -89,12 +110,28 @@ li
 	right: 0  
 	top: 0 
 	bottom: 0
-// * * Navigation bar * * //
-
+.whole
+	position: $fixed
+	height: 65px
+	top: 70px
+	bottom: 0
+	left: 0
+	right: 0
+	.kontakt-left
+		position: $fixed
+		left: 0
+		margin-left: 150px
+		text-align: center
+	.kontakt-right
+		position: $fixed
+		right: 0
+		margin-right: 150px
+		text-align: center
 // * * Iframe * * //
 iframe
 	border: 1px solid #000
 	border-radius: 2px
+	color: $a-color
 
 
 
